@@ -35,7 +35,7 @@ function templateUrl(fileName,res){
 //     });
 // }
 
-var createdServer = server.createServer(function (request,response) {
+var httpServer = server.createServer(function (request,response) {
     response.writeHead(200,{'Content-type':'text/html'});
     switchUrl(request,response);
 });
